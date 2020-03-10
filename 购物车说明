@@ -1,0 +1,19 @@
+参考github: https://github.com/coderwhy/HYMall
+1.目录划分：components下的common放置一些最通用的组件，可以直接拷贝到其他项目使用，和当前项目相关的通用业务组件放在content
+            views放置不同的主要视图组件，store是当前项目的公共变量文件夹
+            src/common放置公共的JS文件
+2.css文件引入： css样式在不同浏览器中展示出不同的样子，需要对其进行统一，创建一个normalize文件 ，在github上查找https://github.com/necolas/normalize.css
+                将文件拷贝到项目assets/css/normalize.css中
+                创建一个base.css用来管理当前项目的样式
+3.配置VUE项目别名：在根目录下创建vue.config.js文件,利用alias配置别名
+4.可以添加.editorconfig文件来统一不同项目的格式
+5.引入之前开发的文件中componyents下的 tabbar，放在components下的common下,将之前开发的文件中componyents下的 MainTabBar复制到content下,图片也复制过来
+6.tabbar需要使用路由相关功能，安装路由 npm install vue-router --save,在router下创建index.js
+7.将之前写的tabbar路由相关的拷贝过来
+
+8.封装首页上部导航 navbar
+
+9.请求首页上轮番播放的图,封装network,将axios下的network拿来,在首页中面向network下的request发起网络请求，在network下新建一个home.js用来发起请求
+10.将得到的数据显示在首页上
+11.怎么让屏幕滑动时候，用力后自动滚动一会，为了让滚动的更加顺滑，使用框架better-scroll
+
